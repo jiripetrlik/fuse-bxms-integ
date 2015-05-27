@@ -3,8 +3,8 @@
 
 
     <feature name="kie-camel" version="${project.version}">
-        <feature version="[6.2.0,7.0)">kie-spring</feature>
-        <feature version="[6.2.0,7.0)">jbpm</feature>
+        <feature version="${version.org.kie}">kie-spring</feature>
+        <feature version="${version.org.jbpm}">jbpm</feature>
         <feature>camel-core</feature>
         <feature>camel-spring</feature>
         <feature>camel-cxf</feature>
@@ -18,7 +18,7 @@
         <feature>jndi</feature>
         <feature version="${version.org.hibernate.features}">hibernate</feature>
         <feature version="[2.0.1,3.0)">switchyard</feature>
-        <feature version="[6.2.0,7.0)">drools-decisiontable</feature>
+        <feature version="${version.org.drools}">drools-decisiontable</feature>
         <feature version="${version.org.jbpm}">jbpm</feature>
         <bundle>wrap:mvn:org.eclipse.aether/aether-api/${version.org.eclipse.aether.aether-api}</bundle><!-- ${version.org.eclipse.aether} -->
         <bundle>wrap:mvn:org.jbpm/jbpm-executor/${version.org.jbpm}$DynamicImport-Package=org.hibernate.*,javassist.*</bundle>

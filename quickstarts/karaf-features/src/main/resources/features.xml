@@ -84,19 +84,19 @@
         
         <bundle>mvn:org.jboss.integration.fuse.quickstarts/switchyard-demo-helpdesk/${project.version}/war</bundle>
     </feature>
-    6.2.0
+
     <feature name="fuse-bxms-camel-blueprint-drools-decision-table" version="${project.version}" resolver="(obr)">
-        <feature version="[6.2.0,7.0)">drools-module</feature>
-        <feature version="[6.2.0,7.0)">drools-decisiontable</feature>
-        <feature version="[6.2.0,7.0)">kie-aries-blueprint</feature>
+        <feature version="${version.org.drools}">drools-module</feature>
+        <feature version="${version.org.drools}">drools-decisiontable</feature>
+        <feature version="${version.org.kie}">kie-aries-blueprint</feature>
         <feature version="${project.version}">kie-camel</feature>
         <bundle>mvn:org.jboss.integration.fuse.quickstarts/blueprint-camel-drools-decision-table/${project.version}</bundle>
     </feature>
 
     <feature name="fuse-bxms-camel-spring-drools-decision-table" version="${project.version}" resolver="(obr)">
-        <feature version="[6.2.0,7.0)">drools-module</feature>
-        <feature version="[6.2.0,7.0)">drools-decisiontable</feature>
-        <feature version="[6.2.0,7.0)">kie-spring</feature>
+        <feature version="${version.org.drools}">drools-module</feature>
+        <feature version="${version.org.drools}">drools-decisiontable</feature>
+        <feature version="${version.org.kie}">kie-spring</feature>
         <feature version="${project.version}">kie-camel</feature>
         <bundle>mvn:org.jboss.integration.fuse.quickstarts/spring-camel-drools-decision-table/${project.version}</bundle>
     </feature>
