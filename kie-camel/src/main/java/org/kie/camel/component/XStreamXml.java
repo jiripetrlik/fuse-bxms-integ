@@ -21,6 +21,7 @@ import org.drools.core.command.runtime.BatchExecutionCommandImpl;
 import org.drools.core.runtime.help.impl.XStreamXML.AbortWorkItemConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.BatchExecutionResultConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.CompleteWorkItemConverter;
+import org.drools.core.runtime.help.impl.XStreamXML.DeleteConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.FactHandleConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.FireAllRulesConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.GetGlobalConverter;
@@ -31,7 +32,6 @@ import org.drools.core.runtime.help.impl.XStreamXML.InsertElementsConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.ModifyConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.QueryConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.QueryResultsConverter;
-import org.drools.core.runtime.help.impl.XStreamXML.RetractConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.SetGlobalConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.SignalEventConverter;
 import org.drools.core.runtime.help.impl.XStreamXML.StartProcessConvert;
@@ -62,7 +62,7 @@ public class XStreamXml {
         }
 
         converters.add( InsertConverter.class.getName() );
-        converters.add( RetractConverter.class.getName() );
+        converters.add( DeleteConverter.class.getName() );
         converters.add( ModifyConverter.class.getName() );
         converters.add( GetObjectConverter.class.getName() );
         converters.add( InsertElementsConverter.class.getName() );
