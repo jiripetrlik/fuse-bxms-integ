@@ -16,7 +16,7 @@
 
 package org.jboss.integration.fuse.karaf.itest.kiecamel.module.drl;
 
-import org.jboss.integration.fuse.karaf.itest.kiecamel.module.model;
+import org.jboss.integration.fuse.karaf.itest.kiecamel.module.model.Person;
 
 rule "CanDrink"
 when
