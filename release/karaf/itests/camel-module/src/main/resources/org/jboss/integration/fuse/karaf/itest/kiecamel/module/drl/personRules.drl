@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-org.jboss.integration.fuse.karaf.itest.kiecamel.module.drl;
+package org.jboss.integration.fuse.karaf.itest.kiecamel.module.drl;
 
 import org.jboss.integration.fuse.karaf.itest.kiecamel.module.model;
 
