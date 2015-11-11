@@ -767,7 +767,13 @@
             <groupId>org.wildfly.camel</groupId>
             <artifactId>wildfly-camel-config</artifactId>
             <version>${version.wildfly.camel}</version>
-         </dependency>  
+         </dependency>
+
+      <dependency>
+        <groupId>org.jboss.integration.fuse</groupId>
+        <artifactId>kie-camel-karaf-itest-module</artifactId>
+        <version>${project.version}</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>

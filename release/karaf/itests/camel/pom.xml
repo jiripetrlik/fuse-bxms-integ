@@ -15,6 +15,12 @@
     
     <dependencies>
         <dependency>
+            <groupId>org.jboss.integration.fuse</groupId>
+            <artifactId>kie-camel-karaf-itest-module</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-core</artifactId>
             <scope>test</scope>
